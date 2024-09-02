@@ -20,7 +20,9 @@ for i in range(6):
     
     # 将字典添加到列表中
     data_list.append(data_dict)
+    
+print(data_list)
 
-# 将列表数据写入 JSON 文件
-with open('anime_data.json', 'w') as f:
-    json.dump(data_list, f, ensure_ascii=False, indent=4)
+# # 将列表数据写入 JSON 文件
+# with open('anime_data.json', 'w') as f:
+#     json.dump(data_list, f, ensure_ascii=False, indent=4)
