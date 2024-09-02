@@ -3,7 +3,12 @@ import requests_html
 
 url = "https://ani.gamer.com.tw/"
 session = requests_html.HTMLSession()
-response = session.get(url)
+
+# 设置自定义 User-Agent 头部
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+}
+response = session.get(url, headers=headers)
 
 # 检查请求是否成功
 if response.status_code == 200:
