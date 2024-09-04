@@ -1,17 +1,15 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 import traceback
 
-# 設定 Chrome options
-chrome_options = Options()
-chrome_options.add_argument("--headless")  # 在無頭模式下運行
-chrome_options.add_argument("--no-sandbox")
-chrome_options.add_argument("--disable-dev-shm-usage")
+# 設定 Firefox options
+firefox_options = Options()
+firefox_options.add_argument("--headless")  # 在無頭模式下運行
 
-# 設定 ChromeDriver
-driver = webdriver.Chrome(service=Service(), options=chrome_options)
+# 設定 FirefoxDriver
+driver = webdriver.Firefox(service=Service(), options=firefox_options)
 
 url = "https://ani.gamer.com.tw"
 

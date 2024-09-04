@@ -11,11 +11,6 @@ jobs:
   selenium-test:
     runs-on: ubuntu-latest
 
-    services:
-      xvfb:
-        image: selenium/standalone-chrome
-        options: --entrypoint "/usr/bin/xvfb-run" # 使用虛擬顯示器
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
