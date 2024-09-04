@@ -16,6 +16,9 @@ url = "https://ani.gamer.com.tw"
 try:
     # 瀏覽目標網站
     driver.get(url)
+    
+    # print content of the page
+    print(driver.page_source)
 
     # 找到所有 class = "anime-name-block" 的元素
     anime_blocks = driver.find_elements(By.CLASS_NAME, "anime-name-block")
