@@ -21,6 +21,7 @@ try:
 
     # 找到所有 class = "anime-name-block" 的元素
     anime_blocks = driver.find_elements(By.CLASS_NAME, "anime-name-block")
+    print(anime_blocks[:10])
     
     print()
     print()
