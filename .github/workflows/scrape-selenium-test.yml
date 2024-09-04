@@ -32,4 +32,4 @@ jobs:
 
     - name: Scrape website
       run: |
-        python scripts/scrape-test.py
+        python scripts/scrape-selenium.py
