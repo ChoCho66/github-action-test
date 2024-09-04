@@ -27,7 +27,7 @@ jobs:
 
     - name: Scrape website
       run: |
-        python scripts/scrape-ani-gamer.py
+        python scripts/scrape-test.py
 
     # - name: Commit results
     #   run: |
