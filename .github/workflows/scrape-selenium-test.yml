@@ -1,9 +1,9 @@
 name: Scrape selenium test
 
 on:
-  # schedule:
-  #   # 这个 cron 表示每天凌晨 2 点运行一次
-  #   - cron: '0 2 * * *'
+  schedule:
+    # 这个 cron 表示每天凌晨 2 点运行一次
+    - cron: '0 4 * * *'
   workflow_dispatch:
     # 手动触发
 

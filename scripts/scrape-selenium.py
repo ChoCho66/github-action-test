@@ -28,6 +28,10 @@ try:
 
     hrefs = [element.get_attribute("href") for element in elements]  # 獲取所有的 href
     print(hrefs)  # 輸出所有的 href
+    
+    with open("links.txt", "w") as file:
+        for href in hrefs:
+            file.write(href + "\n")
 
 
 except Exception as e:
