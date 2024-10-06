@@ -2,8 +2,10 @@ name: Scrape selenium test
 
 on:
   schedule:
+    # 每星期日 12 點執行一次
+    - cron: '0 12 * * 0'
     # 每兩天 12 點執行一次
-    - cron: '0 12 */2 * *'
+    # - cron: '0 12 */2 * *'
   workflow_dispatch:
     # 手动触发
 
